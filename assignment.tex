@@ -22,7 +22,7 @@
 
 \section{Inleiding}
 \begin{itemize}
-    \item Deadline: \textbf{\date{TODO: *12u snachts*}}. 
+    \item Deadline: \textbf{\date{16 mei 23u59}}, je code moet op dat moment ingeleverd zijn op Toledo \& github.
     \item Je werkt in groep van 2 personen aan de volledige opgave.
     \item Er wordt gebruik gemaakt van een github classroom. Accepteer hiervoor de link op Toledo.
     \item Tijdens het examen zul je een extra functionaliteit moeten toevoegen aan je applicatie, zorg er dus voor dat je applicatie eenvoudig uitgebreid kan worden en dat je perfect weet hoe je applicatie werkt. Dit komt bovendien ook van pas tijdens de mondelinge verdediging.
@@ -55,7 +55,7 @@ Nieuwe producten kunnen enkel in een webshop geplaatst worden door een admin en 
 Het aanmaken van een nieuw product kan individueel gebeuren. Hiervoor is een pagina voorzien om details over het product in te vullen. Deze details bestaan uit: \textit{een titel, omschrijving, maat, kleur en prijs}. Hoewel de meeste webshops ook afbeeldingen van de producten laten zien, is dat voor de opdracht niet nodig. Heb je een extra uitdaging nodig, dan mag je dit gerust ook implementeren. Naast het toevoegen van een product kan een bestaand product ook gewijzigd worden.
 
 \subsubsection{Bulk producten}
-Naast individuele product upload is het ook mogelijk om producten in bulk te uploaden. Hiervoor zal de admin een .csv bestand uploaden dat al de details van de nieuwe producten bevat. Gebruik hiervoor bijgevoegd .csv bestand met voorbeeldproducten.
+Naast individuele product upload is het ook mogelijk om producten in bulk te uploaden. Hiervoor zal de admin een .csv bestand uploaden dat al de details van de nieuwe producten bevat. Gebruik hiervoor bijgevoegd products.csv bestand met enkele voorbeeldproducten.
 \\
 \\
 \textit{\textbf{Tip:} \href{https://phoenixframework.readme.io/v0.14.0/docs/file-uploads}{Files uploaden}}
@@ -65,7 +65,7 @@ Naast individuele product upload is het ook mogelijk om producten in bulk te upl
 Oude producten moeten ook verwijdert kunnen worden, uiteraard is deze functionaliteit enkel beschikbaar voor admins. Het verwijderen van producten gebeurd vanaf een overzichtspagina waardat een admin in lijst vorm een overzicht heeft van al de beschikbare producten.
 
 \subsection{Zoeken van een product}
-Op de webshop is er een overzichtspagina waar dat gasten een overzicht krijgen van de beschikbare producten. In dit overzicht moet de titel, maat, kleur en prijs van het product direct zichtbaar zijn. De overige productinformatie moet is zichtbaar in het deailoverzicht \ref{subsection:detail_product}. Verder moeten gebruikers op deze pagina efficient op zoek kunnen gaan naar een product dat ze willen bestellen. Dit kan gebeuren aan de hand van filters. Er wordt verwacht te kunnen zoeken op naam, maat, kleur een min/max-prijs. 
+Op de webshop is er een overzichtspagina waar dat gasten een overzicht krijgen van de beschikbare producten. In dit overzicht moet de titel, maat, kleur en prijs van het product direct zichtbaar zijn. De overige productinformatie moet is zichtbaar in het detailoverzicht \ref{subsection:detail_product}. Verder moeten gebruikers op deze pagina efficient op zoek kunnen gaan naar een product dat ze willen bestellen. Dit kan gebeuren aan de hand van filters. Er wordt verwacht te kunnen zoeken op naam, maat, kleur een min/max-prijs. 
 \\
 \\
 \textit{\textbf{Tip:} \href{https://hexdocs.pm/ecto/Ecto.Query.API.html}{Gebruik de like functionaliteit om te queries uit te voeren op titel}}
@@ -77,7 +77,7 @@ Als de gebruiker op een artikel in de overzichtspagina drukt moeten de details v
 \section{Bestelling}
 \subsection{Winkelmandje}
 \label{subsection:winkelmandje}
-Iedereen kent de functionaliteit van een winkelmandje wel, je houdt de producten tijdelijk bij zodat je verder kunt winkelen en alles op het einde in één keer kunt betalen. Dat is ook exact het doel van een winkelmandje op een webshop. Op de webshop moet er voor zowel gasten als geregistreerde gebruikers een winkelmandje zijn. Als een gastgebruiker zichzelf registreerd moet het winkelmandje mee over gaan van de gastgebruiker naar de geregistreerde gebruiker. Ook als de pagina wordt afgesloten moet het winkelmandje gevuld blijven zodat als de gebruiker opnieuw naar de webshop gaat deze producten niet opnieuw meer moet toevoegen. Tot slot moet er voor de gebruiker de optie zijn om zijn volledig winkelmandje te bekijken (inclusief subprijzen, totaal prijs en product informatie) en producten er uit te verwijderen. 
+Iedereen kent de functionaliteit van een winkelmandje wel, je houdt de producten tijdelijk bij zodat je verder kunt winkelen en alles op het einde in één keer kunt betalen. Dat is ook exact het doel van een winkelmandje op een webshop. Op de webshop moet er enkel voor geregistreerde gebruikers een winkelmandje zijn. Ook als de pagina wordt afgesloten moet het winkelmandje gevuld blijven zodat als de gebruiker opnieuw naar de webshop gaat deze producten niet opnieuw meer moet toevoegen. Tot slot moet er voor de gebruiker de optie zijn om zijn volledig winkelmandje te bekijken (inclusief subprijzen, totaal prijs en product informatie) en producten er uit te verwijderen. Het winkelmandje mag worden opgeslagen in de database, een alternatief is het gebruik van cookies maar dit komt nauwelijks aan bod in de cursus.
 
 \subsection{Aankopen}
 Het aankoopproces is vereenvoudigd in vergelijking met een volledig functionele webshop. Zo moet er, enkel voor geregistreerde gebruikers, bij het overzicht van je winkelmandje is een knop met de functionaliteit 'betalen'. Gasten moeten eerst een account aanmaken voordat deze knop beschikbaar is, geef hiervoor een melding aan gastgebruikers. Zodra er op deze knop wordt gedrukt, wordt het winkelmandje van de gebruiker leeg gemaakt, krijgt de gebruiker een mail (opnieuw moet deze mail in de gekozen taal van de gebruiker) met de bestelde producten en verschijnt er een 'bedankt voor je bestelling'-pagina. Het effectief betalen van je bestelling is dus niet nodig.
