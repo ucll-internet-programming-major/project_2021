@@ -14,7 +14,7 @@ $ git remote add upstream git@github.com:ucll-internet-programming-major/project
 To be done at each update:
 
 ```bash
-$ git pull upstream main
+$ git pull upstream main --allow-unrelated-histories -X theirs
 ```
 
 To be notified of updates, register as watcher [here](https://github.com/ucll-internet-programming-major/project_2021).
