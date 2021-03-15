@@ -30,6 +30,7 @@
     \item Dit project telt voor 30\% mee voor je uiteindelijke score van dit vak. Deze 30\% geldt enkel voor het project, de uitbereiding die tijdens het examen wordt toegevoegd is onderdeel van de 70\% van het examen.
     \item Omdat het project een onderdeel is voor de evaluatie van dit vak, is het examenreglement hierop van toepassing. Schrijf dus je eigen oplossing! Wanneer je hulp krijgt of geeft aan een mede-student, zorg er dan voor dat het altijd over algemeen advies gaat en deel geen code. Vermeld ook altijd je bron. Dit geldt zowel voor contact in persoon maar ook voor advies via online forums. 
     \item Heb je problemen met je project kun je altijd vragen stellen tijdens de les Mails met vragen zullen onbeantwoord blijven.
+    \item Studenten die alleen wensen te werken aan het groepswerk delen dit mee via een email. Deze studenten moeten bulk-upload & zoeken van een product niet te implementeren.
 \end{itemize}{}
 \section{Opgave}
 Met de huidige Corona pandemie zijn steeds meer winkels overgeschakeld naar online verkoop, hiervoor hebben ze snel een webshop moeten ontwikkelen. Dit is dan ook exact wat jullie voor dit project zullen moeten ontwikkelen. Voor de webshop wordt er verwacht dat verschillende 'standaard' webshop functionaliteiten geimplementeerd zijn en geraadpleegt kunnen worden via een browser. Naast `standaard` webshop functionaliteiten moet er ook een API beschikbaar zijn zodat bepaalde admin functionaliteiten beschikbaar zijn via een andere applicatie.
@@ -56,6 +57,7 @@ Nieuwe producten kunnen enkel in een webshop geplaatst worden door een admin en 
 Het aanmaken van een nieuw product kan individueel gebeuren. Hiervoor is een pagina voorzien om details over het product in te vullen. Deze details bestaan uit: \textit{een titel, omschrijving, maat, kleur en prijs}. Hoewel de meeste webshops ook afbeeldingen van de producten laten zien, is dat voor de opdracht niet nodig. Heb je een extra uitdaging nodig, dan mag je dit gerust ook implementeren. Naast het toevoegen van een product kan een bestaand product ook gewijzigd worden.
 
 \subsubsection{Bulk producten}
+\label{subsection:bulk_producten}
 Naast individuele product upload is het ook mogelijk om producten in bulk te uploaden. Hiervoor zal de admin een .csv bestand uploaden dat al de details van de nieuwe producten bevat. Gebruik hiervoor bijgevoegd products.csv bestand met enkele voorbeeldproducten.
 \\
 \\
@@ -66,6 +68,7 @@ Naast individuele product upload is het ook mogelijk om producten in bulk te upl
 Oude producten moeten ook verwijdert kunnen worden, uiteraard is deze functionaliteit enkel beschikbaar voor admins. Het verwijderen van producten gebeurd vanaf een overzichtspagina waardat een admin in lijst vorm een overzicht heeft van al de beschikbare producten.
 
 \subsection{Zoeken van een product}
+\label{subsection:zoeken_van_een_product}
 Op de webshop is er een overzichtspagina waar dat gasten een overzicht krijgen van de beschikbare producten. In dit overzicht moet de titel, maat, kleur en prijs van het product direct zichtbaar zijn. De overige productinformatie moet is zichtbaar in het detailoverzicht \ref{subsection:detail_product}. Verder moeten gebruikers op deze pagina efficient op zoek kunnen gaan naar een product dat ze willen bestellen. Dit kan gebeuren aan de hand van filters. Er wordt verwacht te kunnen zoeken op naam, maat, kleur een min/max-prijs. 
 \\
 \\
@@ -105,7 +108,6 @@ Naast publieke API routes zijn er ook afgeschermde API routes voor admins. Voord
 \\
 \\
 \textit{\textbf{Tip:} De API-key mag een random string zijn, gebruik hiervoor \href{https://hex.pm/packages/secure_random}{secure random} net zoals unieke registratielink tijdens het registereren van een account.}
-
 
 \section{Vormgeving en Layout}
 De vormgeving en layout zijn volledig zelf te bepalen, ben hierbij creatief maar denk tegelijk ook functioneel en plaats geen knoppen op onlogische plaatsen. Laat je gerust inspireren door bestaande webshops maar pleeg geen plagiaat op de layout! 
